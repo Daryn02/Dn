@@ -1,3 +1,12 @@
-print("hello ukam")
-for i in range (1,10):
-    print("Hello world")
+import random
+
+card = []
+
+suits = ["Черви", "Бубни", "трефы", "Пики"]
+card_type = ["Шесть", "Семь", "Восьем", "Девять", "Десять", "Валет", "Дама", "Кароль", "Туз"]
+
+for suit in suits:
+    for type in card_type:
+        card.append(suit + " " + type)
+
+print(card[random.randint(0, 36)])
