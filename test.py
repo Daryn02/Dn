@@ -1,3 +1,5 @@
+import random
+
 card = []
 
 suits = ["Черви", "Бубни", "трефы", "Пики"]
@@ -7,5 +9,4 @@ for suit in suits:
     for type in card_type:
         card.append(suit + " " + type)
 
-print(card)
-print(len(card))
+print(card[random.randint(0, 36)])
